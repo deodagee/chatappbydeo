@@ -29,7 +29,7 @@ const Page: FC = () => {
             Stellarspace | Astrumstellar | Developer: Deo Singiza
             <Image
             alt='logo'
-            src={'/logowhite.png'}
+            src={'/logored2.png'}
             width={50}
             height={50}>
 
