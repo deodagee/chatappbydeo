@@ -5,6 +5,7 @@ import { FC, useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { toast } from 'react-hot-toast'
 import Image from 'next/image'
+import Link from "next/link";
 
 const Page: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -27,8 +28,12 @@ const Page: FC = () => {
         <div className='w-full flex flex-col items-center max-w-md space-y-8'>
           <div className='flex flex-col items-center gap-8'>
 
-            <p className='text-sm'> Stellarspace | Astrumstellar | Developer: Deo Singiza
+            <Link
+            href={"https://astrumstellar.com"}>
+
+            <p className='text-sm'> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
             </p>
+            </Link>
             <Image
               alt='logo'
               src={'/logored2.png'}
@@ -80,6 +85,41 @@ const Page: FC = () => {
             )}
             Google
           </Button>
+          <div className='align-middle justify-items-center flex flex-row m-3'
+          >
+            <Link
+            href={"https://vercel.com/"}>
+            <Image
+              className='m-3 scale-50'
+              alt='logo'
+              src={'/vercel.jpg'}
+              width={100}
+              height={100}>
+            </Image>
+            </Link>
+            <Link
+            href={"https://pusher.com/"}>
+            <Image
+              className='m-3 scale-50'
+              alt='logo'
+              src={'/pusher.jpg'}
+              width={100}
+              height={100}>
+            </Image>
+            </Link>
+
+            <Link
+            href={"https://redis.com/"}
+            >
+            <Image
+              className='m-3 scale-50'
+              alt='logo'
+              src={'/redislogo.jpg'}
+              width={100}
+              height={100}>
+            </Image>
+            </Link>
+          </div>
         </div>
       </div>
     </>
