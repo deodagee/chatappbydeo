@@ -31,7 +31,7 @@ const Page: FC = () => {
             <Link
             href={"https://astrumstellar.com"}>
 
-            <p className='text-sm'> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
+            <p className='text-xs text-teal-500'> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
             </p>
             </Link>
             <Image
