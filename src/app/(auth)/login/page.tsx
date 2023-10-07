@@ -30,7 +30,7 @@ const Page: FC = () => {
 
   <div>
   <Link href={"https://astrumstellar.com"}>
-    <p className='text-xs text-teal-500' style={{ opacity: 0.5, fontSize: '7px' }}>
+    <p className='text-xs text-teal-500' style={{ opacity: 0.5, fontSize: '6px' }}>
       Stellarspace | Astrumstellar.com | Developer: Deo Singiza
     </p>
   </Link>
@@ -124,7 +124,7 @@ const Page: FC = () => {
 
  <div>
   <Link href={"https://astrumstellar.com"}>
-    <p className='text-xs text-black-500' style={{ opacity: 0.5, fontSize: '6px' }}>
+    <p className='text-xs text-black-500' style={{ opacity: 0.5, fontSize: '7px' }}>
       https:astrumstellar.com
     </p>
   </Link>
