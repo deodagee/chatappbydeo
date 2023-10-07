@@ -29,7 +29,7 @@ const Page: FC = () => {
           <div className='flex flex-col items-center gap-8'>
 
             <Link
-            href={"https://astrumstellar.com"}>
+            href={"https://astrumstellar.com"}
 <p className='text-xs text-teal-500' style='opacity: 0.5; font-size: 5px;'>Stellarspace | Astrumstellar.com | Developer: Deo Singiza</p>
             </Link>
             <Image
