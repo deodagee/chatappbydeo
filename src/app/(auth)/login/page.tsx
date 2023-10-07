@@ -121,6 +121,15 @@ const Page: FC = () => {
             </Image>
             </Link>
           </div>
+
+ <div>
+  <Link href={"https://astrumstellar.com"}>
+    <p className='text-xs text-black-500' style={{ opacity: 0.5, fontSize: '6px' }}>
+      https:astrumstellar.com
+    </p>
+  </Link>
+</div>
+
         </div>
       </div>
     </>
