@@ -40,7 +40,7 @@ const Page: FC = () => {
             </Link>
 
             <Link
-            href={"https:astrumstellar.com"}>
+            href={"https://astrumstellar.com"}>
             <Image
             className={styles.logo}
               alt='logo'
