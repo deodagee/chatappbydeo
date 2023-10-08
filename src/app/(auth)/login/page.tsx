@@ -33,7 +33,9 @@ const Page: FC = () => {
             <Link
               href={"https://astrumstellar.com"}>
 
-              <p className='text-xs text-teal-500'> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
+              <p className={styles.top_link}> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
+              </p>
+              <p className={styles.top_link2}> Source Code In Github
               </p>
             </Link>
 
@@ -43,14 +45,15 @@ const Page: FC = () => {
             className={styles.logo}
               alt='logo'
               src={'/logored2.png'}
-              width={50}
-              height={50}>
+              width={100}
+              height={100}>
             </Image>
             </Link>
-            <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
+
+            <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-white'>
               Real Time Chat App
             </h2>
-            <h2 className='mt-6 text-center text-1xl font-bold tracking-tight text-gray-900'>
+            <h2 className={styles.sign_in_text}>
               Sign In To Chat With Your Friends
             </h2>
           </div>
@@ -96,7 +99,7 @@ const Page: FC = () => {
             <Link
               href={"https://vercel.com/"}>
               <Image
-                className='m-3 scale-50'
+                className={styles.bottom_logo}
                 alt='logo'
                 src={'/vercel.jpg'}
                 width={100}
@@ -106,7 +109,7 @@ const Page: FC = () => {
             <Link
               href={"https://pusher.com/"}>
               <Image
-                className='m-3 scale-50'
+                className={styles.bottom_logo}
                 alt='logo'
                 src={'/pusher.jpg'}
                 width={100}
@@ -118,7 +121,7 @@ const Page: FC = () => {
               href={"https://redis.com/"}
             >
               <Image
-                className='m-3 scale-50'
+                className={styles.bottom_logo}
                 alt='logo'
                 src={'/redislogo.jpg'}
                 width={100}
