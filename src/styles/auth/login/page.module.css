@@ -1,0 +1,23 @@
+.first_div {
+    background: linear-gradient(to top, #121212, #141414, #111111, #121212);
+    height: max-content;
+    height: 100vh;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 0.95rem;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    box-shadow: white 0px 0px 10px;
+    border-color: red;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+.logo:hover { 
+    transform: scale(1.04);
+    transition: 0.5s;
+    box-shadow: white 0px 0px 6px;
+}
