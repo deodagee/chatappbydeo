@@ -6,6 +6,7 @@ import { signIn } from 'next-auth/react'
 import { toast } from 'react-hot-toast'
 import Image from 'next/image'
 import Link from "next/link";
+import styles from "../../../../styles/auth/login/page.module.css"
 
 const Page: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -24,24 +25,28 @@ const Page: FC = () => {
 
   return (
     <>
-      <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
+    <div className={styles.first_div}>
+      <div className={`first_div flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8`}>
         <div className='w-full flex flex-col items-center max-w-md space-y-8'>
           <div className='flex flex-col items-center gap-8'>
 
-  <div>
-  <Link href={"https://astrumstellar.com"}>
-    <p className='text-xs text-teal-500' style={{ opacity: 0.5, fontSize: '6px' }}>
-      Stellarspace | Astrumstellar.com | Developer: Deo Singiza
-    </p>
-  </Link>
-</div>
+            <Link
+              href={"https://astrumstellar.com"}>
+
+              <p className='text-xs text-teal-500'> Stellarspace | Astrumstellar.com | Developer: Deo Singiza
+              </p>
+            </Link>
+
+            <Link
+            href={"https:astrumstellar.com"}>
             <Image
+            className={styles.logo}
               alt='logo'
               src={'/logored2.png'}
               width={50}
               height={50}>
-
             </Image>
+            </Link>
             <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
               Real Time Chat App
             </h2>
@@ -89,48 +94,40 @@ const Page: FC = () => {
           <div className='align-middle justify-items-center flex flex-row m-3'
           >
             <Link
-            href={"https://vercel.com/"}>
-            <Image
-              className='m-3 scale-50'
-              alt='logo'
-              src={'/vercel.jpg'}
-              width={100}
-              height={100}>
-            </Image>
+              href={"https://vercel.com/"}>
+              <Image
+                className='m-3 scale-50'
+                alt='logo'
+                src={'/vercel.jpg'}
+                width={100}
+                height={100}>
+              </Image>
             </Link>
             <Link
-            href={"https://pusher.com/"}>
-            <Image
-              className='m-3 scale-50'
-              alt='logo'
-              src={'/pusher.jpg'}
-              width={100}
-              height={100}>
-            </Image>
+              href={"https://pusher.com/"}>
+              <Image
+                className='m-3 scale-50'
+                alt='logo'
+                src={'/pusher.jpg'}
+                width={100}
+                height={100}>
+              </Image>
             </Link>
 
             <Link
-            href={"https://redis.com/"}
+              href={"https://redis.com/"}
             >
-            <Image
-              className='m-3 scale-50'
-              alt='logo'
-              src={'/redislogo.jpg'}
-              width={100}
-              height={100}>
-            </Image>
+              <Image
+                className='m-3 scale-50'
+                alt='logo'
+                src={'/redislogo.jpg'}
+                width={100}
+                height={100}>
+              </Image>
             </Link>
           </div>
-
- <div>
-  <Link href={"https://astrumstellar.com"}>
-    <p className='text-xs text-black-500' style={{ opacity: 0.5, fontSize: '7px' }}>
-      https:astrumstellar.com
-    </p>
-  </Link>
-</div>
-
         </div>
+      </div>
       </div>
     </>
   )
