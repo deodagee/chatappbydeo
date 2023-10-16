@@ -4,7 +4,8 @@
 .page_page_parent__or9PH {
     margin: 0;
     padding: 0;
-    background: linear-gradient( #f2f2f2, #ececec);
+    background: linear-gradient( #ffffff, white, white,   #0e0f155f);
+    background-image: url("/bgwhole19.jpg");
     height: -moz-max-content;
     height: max-content;
     background-repeat: no-repeat;
@@ -16,23 +17,45 @@
     justify-content: space-between;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.page_page_wrapper__Cp225 { 
+.page_page_wrapper__Cp225 {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("/logoshell.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 180px;
-    background-size: 200px;
+    background-position-y: 20vh;
+    background-size: 100px;
     margin-bottom: 100px;
     padding: 20px;
-    overflow-x: hidden;
 
+
+    transition: 0.5s;
+    animation: page_changeBackground__pXOTk 15s infinite;
 }
+
+@keyframes page_changeBackground__pXOTk {
+    0% { background-image: url("/logoshell4.png"); 
+        transition: 0.5s;
+        background-size:170px;
+}
+    33% { background-image: url("/logoshell3.png"); 
+        transition: 0.5s;
+        background-size:205px;
+}
+    66% { background-image: url("/logoshell2.png");
+        transition: 0.5s;
+        background-size:190px;
+ }
+    100% { background-image: url("/logoshell.png"); 
+        transition: 0.5s;
+        background-size:210px;
+    }    
+}
+
 
 .page_top_title_wrapper__quawJ { 
     display: flex;
