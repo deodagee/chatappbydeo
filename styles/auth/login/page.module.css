@@ -1,43 +1,67 @@
-.first_div {
-    background: linear-gradient( #e2e2e2, #e5e5e5);
+.page_parent {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #f2f2f2, #ececec);
     height: max-content;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    gap: 20px;
+    overflow-x: hidden;
 }
 
-.first_div_wrapper { 
-    width: 90vw;
-    background-image: url('/logogreythreed.jpg');
+.page_wrapper { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/logoshell.png");
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 0.15rem;
-    box-shadow: black 0px 0px 7px;
+    background-position-y: 180px;
+    background-size: 200px;
+    margin-bottom: 100px;
+    padding: 20px;
+    overflow-x: hidden;
 
 }
 
-.information_span {
+.top_title_wrapper { 
     display: flex;
-    font-family: sans-serif;
-    font-weight: 600;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content:space-between;
+    height: max-content;
     gap: 10px;
-    font-size: 12px;
-    color: rgb(226, 226, 226);
 }
 
+.top_title { 
+    width: 200px;
+    display: flex;
+    color: rgb(0, 33, 51);
+    justify-content: flex-start;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.information_span { 
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    color: rgb(30, 30, 30);
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: left;
+}
 .information_span p { 
-    background-color: rgb(34, 34, 34);
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 0.5rem;
+    max-width: 100px;
 }
-
 .top_link { 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 9px;
     font-family: sans-serif;
     transition: 0.3s;

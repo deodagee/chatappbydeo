@@ -25,19 +25,23 @@ const Page: FC = () => {
 
   return (
     <>
-      <div className={styles.first_div}>
-      <h2 className='mt-0 mb-15 text-center text-3xl font-bold tracking-tight text-cyan-900'>
-                  Real Time Chat App
-                </h2>
-                <div className={styles.information_span}> 
-                  <p>Login</p>
-                  <p>Chat With Your Friends</p>
-                  <p>Accept Requests</p>
-                  <p>Send Requests</p>
-                </div>
-        <div className={styles.first_div_wrapper}>
-          
-          <div className={`first_div flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8`}>
+      <div className={styles.page_parent}>
+        <div className={styles.page_wrapper}>
+          <div className={styles.top_title_wrapper}>
+            <h2 className={styles.top_title}>
+              Real Time Chat App
+            </h2>
+            <span className={styles.information_span}>
+              <p className='text-orange-800 '>Features</p>
+
+              <p>Login With Google</p>
+              <p>Accept Requests</p>
+              <p>Send Requests</p>
+              <p>Chat With Friends</p>
+            </span>
+          </div>
+
+          <div className={`flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8`}>
             <div className='w-full flex flex-col items-center max-w-md space-y-8'>
               <div className='flex  flex-col items-center gap-8'>
 
@@ -73,7 +77,7 @@ const Page: FC = () => {
               <Button
                 isLoading={isLoading}
                 type='button'
-                className='max-w-sm mx-auto w-full'
+                className='max-w-sm mx-auto w-max pl-10 pr-10'
                 onClick={loginWithGoogle}>
                 {isLoading ? null : (
                   <svg
@@ -105,7 +109,7 @@ const Page: FC = () => {
                   </svg>
                 )}
                 <p className={styles.google_sign_in}>
-                Google Sign In
+                  Google Sign In
                 </p>
               </Button>
               <div className='align-middle justify-items-center flex flex-row m-3'
