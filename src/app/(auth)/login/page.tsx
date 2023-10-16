@@ -32,12 +32,16 @@ const Page: FC = () => {
               Real Time Chat App
             </h2>
             <span className={styles.information_span}>
-              <p className='text-orange-800 '>Features</p>
+              <p>Features</p>
 
               <p>Login With Google</p>
+              <span className={styles.white_span_line}></span>
               <p>Accept Requests</p>
+              <span className={styles.white_span_line}></span>
               <p>Send Requests</p>
+              <span className={styles.white_span_line}></span>
               <p>Chat With Friends</p>
+              <span className={styles.white_span_line}></span>
             </span>
           </div>
 
