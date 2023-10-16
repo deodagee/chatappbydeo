@@ -6,6 +6,7 @@ import axios from 'axios'
 import { Check, UserPlus, X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { FC, useEffect, useState } from 'react'
+import styles from "../../styles/dashboard/requests.module.css"
 
 interface FriendRequestsProps {
   incomingFriendRequests: IncomingFriendRequest[]
@@ -68,7 +69,12 @@ const FriendRequests: FC<FriendRequestsProps> = ({
   return (
     <>
       {friendRequests.length === 0 ? (
-        <p className='text-sm text-zinc-500'>Nothing to show here...</p>
+
+        <div>
+        <p className='text-sm text-zinc-500'>Nothing Here Yet...</p>
+        <p className={styles.add_a_friend}>Add A Friend With A Google Account !</p>
+        </div>
+
       ) : (
         friendRequests.map((request) => (
           <div key={request.senderId} className='flex gap-4 items-center'>

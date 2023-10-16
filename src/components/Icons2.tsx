@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/dashboard/icons.module.css';
 
-function TopLogoAndText() {
+function Icons2() {
   return (
       <div className={styles.image_wrapper}>
         {/* Use your custom image with the next/image component */}
@@ -11,10 +11,10 @@ function TopLogoAndText() {
           width={100}
           height={100}
           alt='image'
-          src={"/logowhite.png"}
+          src={"/logored2.png"}
         />
       </div>
   );
 }
 
-export default TopLogoAndText;
+export default Icons2;
