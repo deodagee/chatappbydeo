@@ -1,0 +1,14 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/api/friends/accept/route": "app/api/friends/accept/route.js",
+  "/api/friends/add/route": "app/api/friends/add/route.js",
+  "/api/friends/deny/route": "app/api/friends/deny/route.js",
+  "/api/message/send/route": "app/api/message/send/route.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/dashboard/add/page": "app/(dashboard)/dashboard/add/page.js",
+  "/(dashboard)/dashboard/requests/page": "app/(dashboard)/dashboard/requests/page.js",
+  "/(dashboard)/dashboard/chat/[chatId]/page": "app/(dashboard)/dashboard/chat/[chatId]/page.js"
+}
