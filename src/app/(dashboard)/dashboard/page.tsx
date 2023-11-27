@@ -46,12 +46,13 @@ const page = async ({}) => {
 
   return (
     <div className='container py-12'>
-      <div className={styles.recentchats_title}>
+      <div className={styles.recentchats_title_andsub}>
       <h1 className='font-bold text-5xl mb-8'>Recent chats</h1>
-      </div>
       {friendsWithLastMessage.length === 0 ? (
         <p className='text-sm text-zinc-500'>Nothing Here Yet...</p>
+        
       ) : (
+        
         friendsWithLastMessage.map((friend) => (
           <div
             key={friend.id}
@@ -77,6 +78,7 @@ const page = async ({}) => {
                   />
                 </div>
               </div>
+              
 
               <div>
                 <h4 className='text-lg font-semibold'>{friend.name}</h4>
@@ -92,6 +94,7 @@ const page = async ({}) => {
           </div>
         ))
       )}
+            </div>
     </div>
   )
 }
