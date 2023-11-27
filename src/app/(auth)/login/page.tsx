@@ -9,6 +9,17 @@ import Link from "next/link";
 import styles from "../../../../styles/auth/login/page.module.css"
 
 const Page: FC = () => {
+
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  const handleButtonClick = () => {
+    setPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setPopupVisible(false);
+  };
+
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   async function loginWithGoogle() {
@@ -45,7 +56,10 @@ const Page: FC = () => {
             </span>
           </div>
 
+
           <div className={`flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8`}>
+          <div className={styles.pageinfo_column}>
+
             <div className='w-full flex flex-col items-center max-w-md space-y-8'>
               <div className='flex  flex-col items-center gap-8'>
 
@@ -73,10 +87,35 @@ const Page: FC = () => {
                   </Image>
                 </Link>
 
+                  <div className={styles.topinfo}>
                 <h2 className={styles.sign_in_text}>
                   Sign In To Chat With Your Friends
                 </h2>
+                <button onClick={handleButtonClick}>How to Use The App?</button>
+                {isPopupVisible && (
+        <div className={styles.popup}>
+          <div className={styles.popup_content}>
+            <p className={styles.popup_content_items}>
+              <span>1. Log In With A Google Account</span>
+              <span>2. Check The Dashboard For The Add A Friend Button</span>
+              <span>3.Enter The Email You Want To Add.</span>
+              <span>4. If The Person Whose Email You Added Has Also Already Logged In To This App And Is Using It, Then The Email Will Be Added. Otherwise You Will Get An Error. This Is For Safety Reasons, No Need To Get In Trouble Here!</span>
+              <span>5.Once A Friend Has Been Added, You Can Chat With Them.</span>
+              <span>Note: This App has a monthly data cap as it is a demo app for clients to view. If for some reason the app is not working for you, please contact me and I will provide you another link for testing. Cheers.</span>
+
+            </p>
+            <button onClick={handlePopupClose}>Close</button>
+          </div>
+        </div>
+        
+      )}
+    </div>
+    </div>
               </div>
+
+
+              <div className={styles.signin_andicons}>
+
 
               <Button
                 isLoading={isLoading}
@@ -151,10 +190,11 @@ const Page: FC = () => {
                   </Image>
                 </Link>
               </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }
