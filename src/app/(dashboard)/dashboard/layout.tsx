@@ -69,7 +69,9 @@ const Layout = async ({ children }: LayoutProps) => {
           <>
           <div className={styles.top_links_group}>
           <p className={styles.made_by}>Developer: Deo Singiza</p>
+          <Link href={"https://astrumstellar.com"}>
             <p className={styles.made_by}>Developer&apos;s Website</p>
+            </Link>
           </div>
           <div className='text-xs font-semibold leading-6 text-gray-400'>
             Your chats
@@ -146,3 +148,6 @@ const Layout = async ({ children }: LayoutProps) => {
 }
 
 export default Layout
+
+
+
