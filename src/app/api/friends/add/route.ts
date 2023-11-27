@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     console.log('id of email to add:', idToAdd)
 
     if (!idToAdd) {
-      return new Response('This person does not exist.', { status: 400 })
+      return new Response('This person does not exist or did not create an account on this app.', { status: 400 })
     }
 
     const session = await getServerSession(authOptions)
