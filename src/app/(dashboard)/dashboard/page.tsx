@@ -7,6 +7,7 @@ import { getServerSession } from 'next-auth'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import styles from "../../../../styles/dashboard/requests.module.css"
 
 const page = async ({}) => {
   const session = await getServerSession(authOptions)
@@ -45,7 +46,9 @@ const page = async ({}) => {
 
   return (
     <div className='container py-12'>
+      <div className={styles.recentchats_title}>
       <h1 className='font-bold text-5xl mb-8'>Recent chats</h1>
+      </div>
       {friendsWithLastMessage.length === 0 ? (
         <p className='text-sm text-zinc-500'>Nothing Here Yet...</p>
       ) : (
